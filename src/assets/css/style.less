@@ -1,0 +1,76 @@
+@priority1-color: #617FDE; // 低优先级颜色
+@priority2-color: #FFC817; // 中优先级颜色
+@priority3-color: #FF3180; // 高优先级颜色
+
+@border-color: #e5dede; //
+
+@theme-color: #617FDE;
+
+.priority1-color {
+    color: @priority1-color !important;
+}
+.priority2-color {
+    color: @priority2-color !important;
+}
+.priority3-color {
+    color: @priority3-color !important;
+}
+
+
+.sort-icon {
+    font-size: 20px;
+    cursor: pointer;
+    color: #898a8c;
+    transition: .5s;
+}
+
+.sort-icon:hover {
+    color: #000;
+}
+
+//被选中的checkbox
+
+/deep/ .priority1 .el-checkbox__inner {
+    border: 1px solid @priority1-color;
+}
+
+/deep/ .priority1 .el-checkbox__inner:after {
+    border-color: @priority1-color;
+}
+
+/deep/ .priority2 .el-checkbox__inner {
+    border: 1px solid @priority2-color;
+}
+
+/deep/ .priority2 .el-checkbox__inner:after {
+    border-color: @priority2-color;
+}
+
+/deep/ .priority3 .el-checkbox__inner {
+    border: 1px solid @priority3-color;
+}
+
+/deep/ .priority3 .el-checkbox__inner:after {
+    border-color: @priority3-color;
+}
+/deep/ .checked .el-checkbox__inner {
+    background-color: #fff;
+}
+
+//iview loading-bar
+.ivu-loading-bar {
+    width: 100%;
+    height: 2px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2000;
+}
+.ivu-loading-bar-inner-color-primary {
+    background-color: #2d8cf0;
+}
+
+.ivu-loading-bar-inner {
+    transition: width .2s linear;
+}
