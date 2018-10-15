@@ -6,7 +6,7 @@
             </div>
             <div style="flex: 1;text-align: right;">
                 <el-dropdown trigger="click" @command="handleCommandSort">
-                    <i class="icon iconfont icon-timesort sort-icon" style="font-size: 23px;"></i>
+                    <i class="icon iconfont sort-icon" :class="{'icon-timesort': sort_type == 1, 'icon-youxianjifeichangjinjix': sort_type == 2}" style="font-size: 23px;"></i>
                     <el-dropdown-menu slot="dropdown">
                         <el-dropdown-item command="date">
                             <i class="icon iconfont icon-timesort" style="font-size: 23px;padding-right: 10px;"></i>

@@ -107,10 +107,10 @@
                                     type: 'success'
                                 });
                             } else {
-                                    self.$message({
-                                        message: res.data.msg,
-                                        type: 'error'
-                                    });
+                                self.$message({
+                                    message: res.data.msg,
+                                    type: 'error'
+                                });
                             }
                         }).catch(function (err) {
                             self.$message({
@@ -125,12 +125,10 @@
                 var self = this;
                 self.$refs[formName].validate((valid) => {
                     if (valid) {
-                        self.$http.get('/v1/users', {
-                        // self.$http.get('/static/data/user.json', {
-                            params: {
-                                email: self.loginForm.email,
-                                password: self.loginForm.password,
-                            },
+                        self.$http.post('/v1/users/login', {
+                            // self.$http.get('/static/data/user.json', {
+                            email: self.loginForm.email,
+                            password: self.loginForm.password,
                         }).then(function (res) {
                             if (res.data.code == 0) {
                                 let loginUser = {};
