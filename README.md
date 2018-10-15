@@ -19,6 +19,7 @@
 ## 说明
 
 - 类别模块、统计模块还未完成。
+- [静态预览地址](https://imfdj.github.io/todolist-vue/#/login)  账号：1@qq.com 密码：123123
 
 
 
