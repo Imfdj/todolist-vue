@@ -1,21 +1,27 @@
-# todolist-vue
 
-> todolist vue
 
-## Build Setup
+## todolist-vue
 
-``` bash
-# install dependencies
-npm install
+## 技术栈
 
-# serve with hot reload at localhost:8080
-npm run dev
+- 前端： vue + vue-router + vuex + axios + element-ui + less  
 
-# build for production with minification
-npm run build
+- 后端： express + mysql + mocha  [github地址](https://github.com/Imfdj/todolist-express)
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## 运行
+
+- 克隆仓库 ``` git clone https://github.com/Imfdj/todolist-vue.git ```
+- 进入项目 ``` cd todolist-vue ```
+- 安装依赖 ``` npm i ```
+- 运行项目 ``` npm start ```
+
+
+
+
+
+
+
+
+
+
